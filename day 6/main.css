@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+/* 
+==============
+Globals
+==============
+*/
+.container {
+  padding: 15px;
+  height: 100vh;
+  background-color: lightgray;
+}
+.section {
+  background-color: grey;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.red {
+  background: maroon;
+}
+
+/* 
+==============
+Top
+==============
+*/
+
+.top--title {
+  width: 95%;
+  padding: 15px 5px;
+  margin-left: 5px;
+  border: 1px black solid;
+}
+.top--left {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.top--left--square {
+  height: 120px;
+  flex: 0 1 30%;
+  margin: 5px;
+}
+.top--left--rect {
+  flex: 0 1 62%;
+  height: 120px;
+  margin: 5px;
+}
+
+.top--right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.top--right--square {
+  height: 20%;
+  border: 1px black solid;
+  flex: 0 1 20%;
+  margin: 5px;
+}
+.top--right--circle {
+  border-radius: 50%;
+  border: 1px black solid;
+  flex-basis: 61%;
+  height: 230px;
+  margin: 5px;
+}
+/* 
+==============
+Middle
+==============
+*/
+.middle {
+  /* width: 99%; */
+  height: 300px;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px 0;
+}
+.middle--long {
+  flex-basis: 100%;
+  height: 40%;
+}
+.middle--medium {
+  height: 40%;
+
+  flex: 2 1 25%;
+}
+.middle--small {
+  height: 40%;
+  flex: 2 1 15%;
+  margin: 0 5px;
+}
+.middle--big {
+  height: 40%;
+  flex: 2 1 50%;
+}
+/* 
+==============
+Bottom
+==============
+*/
+.bottom--box {
+  height: 250px;
+  flex-basis: 19%;
+  margin: 2px;
+}
+.bottom--box--small {
+  flex: 0 3 15%;
+}
+.bottom--box--big {
+  flex: 1 1 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom--box--big--top {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+}
+.bottom--box--big--bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+}
+.bottom--box--circle {
+  height: 75px;
+  width: 75px;
+  background-color: blue;
+  border-radius: 50%;
+}
